@@ -51,7 +51,9 @@ p {
 }
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
 }
+
 section {
   padding: 100px 0;
 }
@@ -155,7 +157,6 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('header.jpg');
   text-align: center;
   color: white;
 }
@@ -212,7 +213,6 @@ header .header-content .header-content-inner p {
   margin-top: 0;
 }
 .service-box {
-  max-width: 400px;
   margin: 50px auto 0;
 }
 @media (min-width: 992px) {

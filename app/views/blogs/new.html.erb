@@ -1,0 +1,8 @@
+<div id="write">
+<%= form_tag '/blogs/create' do %>
+    <div><input type="text" name="name" class="new_input" placeholder="Name"></div>
+    <div><input type="text" name="title" class="new_input" placeholder="Title"></div>
+    <div><textarea name="content" class="new_input new_textarea" placeholder="Content"></textarea></div>
+    <div><input type="submit" class="new_input new_submit" value="확인"></div>
+<% end %>
+</div>

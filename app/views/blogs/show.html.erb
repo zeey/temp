@@ -1,0 +1,31 @@
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1><%= @post.title %></h1>
+                    <span class="info">Posted by <span class="name"><%=@post.name%></span> on July 8, 2014</span>
+                    <div class="button">
+                        <a href="/posts/edit/<%=@post.id%>"><div class="btn_edit">Edit</div></a>
+                        <a href="/posts/delete/<%=@post.id%>"><div class="btn_edit">Delete</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <%= @post.content %>
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>

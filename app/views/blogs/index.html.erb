@@ -1,0 +1,53 @@
+
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Lorem ipsum</h1>
+                        <hr class="small">
+                        <span class="subheading">Welcome!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <% if @posts.size > 0 %>
+                    <% @posts.each do |article| %>
+                        <div class="post-preview">
+                            <a href="/posts/<%= article.id %>">
+                                <h2 class="post-title">
+                                  <%= article.title %>
+                                </h2>
+                                <h3 class="post-subtitle">
+                                  <%= article.content %>
+                                </h3>
+                            </a>
+                            <p class="post-meta">Posted by <a href="About"><%= article.name %></a> on July 8, 2014</p>
+                        </div>
+                        <hr>
+                    <% end %>
+                <% end %>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <%= render 'footer' %>
+

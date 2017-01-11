@@ -1,3 +1,42 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.basic_info_heading {
+    display: inline-block;
+    margin: 5px 0;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+}
+.bg-primary .text-primary {
+    color: #fff;
+    margin-right: 15px;
+}
+.service-box h3 {
+    font-weight: bolder;
+}
+.service-box .row, .container .row {
+    margin: 0;
+}
+.service-box .col-sm-2 {
+    padding: 0;
+    font-size: .75em;
+}
+.service-box p {
+    margin-top: 0;
+}
+.service-box .pf-header-title {
+    font-size: 20px;
+    color: #000;
+}
+.service-box .pf-content {
+    color: #777;
+}
+.service-box .text-muted {
+    margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+    .service-box .col-sm-10 {
+        text-align: justify;
+    }
+}
